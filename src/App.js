@@ -1,6 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import Movie from './Movie';
+import "./App.css";
 
 // constructor()는 웹사이트에 표시되기 전에 실행됨
 class App extends React.Component{
@@ -41,6 +42,7 @@ class App extends React.Component{
               year={movie.year} 
               title={movie.title} 
               summary={movie.summary} 
+              genres={movie.genres}
             />
         ))}
           </div>
